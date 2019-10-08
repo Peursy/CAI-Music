@@ -17,8 +17,8 @@
     <div id="wrapper">
       <!-- top-left menubar -->
       <ul id="top-left-menu-bar" style="">
-        <button id="b_1">top-left entry1</button>
-        <button id="b_2" class=".button_head">top-left entry2</button>
+        <button id="b_1" onclick="change_content_pane(HOME)">top-left entry1</button>
+        <button id="b_2" class=".button_head" onclick="change_content_pane(DEMO)">top-left entry2</button>
       </ul>
 
       <!-- top-right menubar -->
@@ -29,7 +29,9 @@
 
       <!-- Content Pane - see app_base.js -->
       <div id="content-pane">
-        Add content through app.js
+        <script type="text/javascript">
+          update();
+        </script>
       </div>
     </div>
   </body>
