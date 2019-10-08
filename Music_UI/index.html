@@ -3,8 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Music_UI</title>
+
+    <!-- importing css -->
+    <link rel="stylesheet" type="text/css" href="src/css/app_base.css" />
+    <!-- imported css -->
+
+    <!-- importing js -->
+    <script type="text/javascript" src="src/js/app_base.js"></script>
+    <!-- imported js -->
+
   </head>
   <body>
+    <div id="wrapper">
+      <!-- top-left menubar -->
+      <ul id="top-left-menu-bar" style="">
+        <button id="b_1">top-left entry1</button>
+        <button id="b_2" class=".button_head">top-left entry2</button>
+      </ul>
 
+      <!-- top-right menubar -->
+      <ul id="top-right-menu-bar">
+        <button id="b_-1">top-right entry1</button>
+          <button id="b_-2">top-right entry2</button>
+      </ul>
+
+      <!-- Content Pane - see app_base.js -->
+      <div id="content-pane">
+        Add content through app.js
+      </div>
+    </div>
   </body>
 </html>
