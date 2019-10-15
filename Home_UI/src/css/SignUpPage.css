@@ -13,14 +13,34 @@ div.btnbg {
     left:0;
     top:0;
 }
+#formdiv{
+  position: absolute;
+  display: inline-block;
+  height: 105%;
+  width: 110%;
+  z-index: 0;
+  background: rgba(120, 120, 140, 0.7);
+  filter:blur(4px);
+
+  /*margin-right: 5%;*/
+  /*margin-bottom: 5%;*/
+}
+
+form{
+  position: relative;
+  table-layout: fixed;
+  z-index: 0;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
 
 /*=======================================================*/
 .center {
   /*text-align: center;*/
   margin: 0;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 22.5%;
+  left: 20%;
   right: 25%;
   bottom: 25%
   /*-ms-transform: translate(-50%, -50%);*/
@@ -29,6 +49,7 @@ div.btnbg {
 .titre{
 	color: #33B5E5;
 	text-align: center;
+  font-size: 30px;
 }
 
 input[type=text]{
