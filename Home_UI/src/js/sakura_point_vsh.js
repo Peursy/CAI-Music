@@ -206,3 +206,65 @@ void main(void) {
     vec4 col = texture2D(uSrc, texCoord);
     gl_FragColor = vec4(col.rgb * 2.0 - vec3(0.5), 1.0);
 }`;
+
+document.getElementById('fx_dirblur_r4_fsh').textContent = `  #ifdef GL_ES
+  //precision mediump float;
+  precision highp float;
+  #endif
+  uniform sampler2D uSrc;
+  uniform vec2 uDelta;
+  uniform vec4 uBlurDir; //dir(x, y), stride(z, w)
+
+  varying vec2 texCoord;
+  varying vec2 screenCoord;
+
+  void main(void) {
+  vec4 col = texture2D(uSrc, texCoord);
+  col = col + texture2D(uSrc, texCoord + uBlurDir.xy * uDelta);
+  col = col + texture2D(uSrc, texCoord - uBlurDir.xy * uDelta);
+  col = col + texture2D(uSrc, texCoord + (uBlurDir.xy + uBlurDir.zw) * uDelta);
+  col = col + texture2D(uSrc, texCoord - (uBlurDir.xy + uBlurDir.zw) * uDelta);
+  gl_FragColor = col / 5.0;
+}`;
+document.getElementById('fx_common_fsh').textContent = `  #ifdef GL_ES
+  //precision mediump float;
+  precision highp float;
+  #endif
+  uniform sampler2D uSrc;
+  uniform vec2 uDelta;
+
+  varying vec2 texCoord;
+  varying vec2 screenCoord;
+
+  void main(void) {
+  gl_FragColor = texture2D(uSrc, texCoord);
+}`;
+document.getElementById('pp_final_vsh').textContent = `  uniform vec3 uResolution;
+  attribute vec2 aPosition;
+  varying vec2 texCoord;
+  varying vec2 screenCoord;
+  void main(void) {
+  gl_Position = vec4(aPosition, 0.0, 1.0);
+  texCoord = aPosition.xy * 0.5 + vec2(0.5, 0.5);
+  screenCoord = aPosition.xy * vec2(uResolution.z, 1.0);
+}`;
+document.getElementById('pp_final_fsh').textContent = `  #ifdef GL_ES
+  //precision mediump float;
+  precision highp float;
+  #endif
+  uniform sampler2D uSrc;
+  uniform sampler2D uBloom;
+  uniform vec2 uDelta;
+  varying vec2 texCoord;
+  varying vec2 screenCoord;
+  void main(void) {
+  vec4 srccol = texture2D(uSrc, texCoord) * 2.0;
+  vec4 bloomcol = texture2D(uBloom, texCoord);
+  vec4 col;
+  col = srccol + bloomcol * (vec4(1.0) + srccol);
+  col *= smoothstep(1.0, 0.0, pow(length((texCoord - vec2(0.5)) * 2.0), 1.2) * 0.5);
+  col = pow(col, vec4(0.45454545454545)); //(1.0 / 2.2)
+
+  gl_FragColor = vec4(col.rgb, 1.0);
+  gl_FragColor.a = 1.0;
+}`;
