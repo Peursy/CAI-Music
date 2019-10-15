@@ -1,21 +1,40 @@
-p{
-  background-color: #AAAAAA;
-  display: inline;
+audio{
+  margin-top: 3%;
+}
+
+div{
+  font-size: 18;
 }
 
 .left{
   float:left;
-  width:50%;
+  padding:1%;
+  width:54%;
   height:100% !important;
 }
 .right{
   float:right;
-  width:50%;
+  padding:1%;
+  width:40%;
   height:100% !important;
 }
-.center{
-  float:center;
+.fill, .center, .sound_player{
   width:100%;
-  height:100%;
-  display: inline;
+  height: auto;
+  padding: 0;
+  margin-bottom: 3%;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #C0E0FF;
+}
+
+.fill{
+  height: 100%;
+}
+
+.sound_player{
+  width:100%;
+  height: auto;
+  margin-top: 3%;
+  background-color: #C0E0FF;
 }
