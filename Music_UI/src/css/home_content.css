@@ -1,3 +1,21 @@
 p{
   background-color: #AAAAAA;
+  display: inline;
+}
+
+.left{
+  float:left;
+  width:50%;
+  height:100% !important;
+}
+.right{
+  float:right;
+  width:50%;
+  height:100% !important;
+}
+.center{
+  float:center;
+  width:100%;
+  height:100%;
+  display: inline;
 }

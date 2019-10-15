@@ -11,10 +11,10 @@ function change_content_pane (content){
 function update(){
   switch (current_content_pane) {
     case HOME:
-      document.getElementById("content-pane").innerHTML='<object type="text/html" data="src/html/home_content.html"></object>';
+      document.getElementById("content-pane").innerHTML='<object class="center" type="text/html" data="src/html/home_content.html" style="width:100%; height:100%;"></object>';
     break;
     case DEMO:
-      document.getElementById("content-pane").innerHTML='<object type="text/html" data="src/html/demo_content.html"></object>';
+      document.getElementById("content-pane").innerHTML='<object class="center" type="text/html" data="src/html/demo_content.html" style="width:100%; height:100%;"></object>';
     break;
 
   }
