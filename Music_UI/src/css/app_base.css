@@ -18,7 +18,7 @@ button{
 }
 
 img{
-  height: 100%:
+  height: 50%;
 }
 
 .button-header-left{
@@ -32,7 +32,7 @@ img{
 
 .button-header-right{
   width: 10% !important;
-  height: 6px;
+  height: 0 !important;
   margin: 0%;
 
   padding: 0;
@@ -50,6 +50,9 @@ img{
   float: right;
   color: white;
   font-size: 150%;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }
 
 .menu-bar{
