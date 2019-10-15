@@ -1,5 +1,3 @@
-document.write("Here is my js code");
-
 const HOME = 0;
 const DEMO = 1;
 
