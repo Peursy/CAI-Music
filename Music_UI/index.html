@@ -14,25 +14,54 @@
 
   </head>
   <body>
-    <div id="wrapper">
+
+    <div class="menu-bar-main">
+
       <!-- top-left menubar -->
-      <ul id="top-left-menu-bar" style="">
-        <button id="b_1" onclick="change_content_pane(HOME)">top-left entry1</button>
-        <button id="b_2" class=".button_head" onclick="change_content_pane(DEMO)">top-left entry2</button>
-      </ul>
+
+
+      <button id="b_1" class="button-header-left" onclick="change_content_pane(HOME)">
+        <img <src="assets/icons/home_icon.png DISABLED" alt="HOME_ICON">
+        <div class="button-text">
+          top-left entry1
+        </div>
+      </button>
+
+      <button id="b_2"class="button-header-left" onclick="change_content_pane(DEMO)">
+        <img <src="assets/icons/?" alt="DEMO_ICON">
+        <div class="button-text">
+          top-left entry2
+        </div>
+      </button>
+
+      <button id="b_3" class="button-header-left" style="border-radius: 0px 0px 50px 0px;">
+        <img <src="assets/icons/?" alt="TUTO_ICON">
+        <div class="button-text">
+          top-left entry3
+        </div>
+      </button>
 
       <!-- top-right menubar -->
-      <ul id="top-right-menu-bar">
-        <button id="b_-1">top-right entry1</button>
-          <button id="b_-2">top-right entry2</button>
-      </ul>
+      <button id="b_-1" class="button-header-right" style="float: right;">
+        <img <src="assets/icons/?" alt="USER_ICON">
+      </button>
 
-      <!-- Content Pane - see app_base.js -->
-      <div id="content-pane">
+      <button id="b_-2" class="button-header-right" style="float: right;">
+        <img <src="assets/icons/?" alt="SEARCH_ICON">
+      </button>
+
+      <button id="b_-3" class="button-header-right" style="float: right;">
+        <img <src="assets/icons/?" alt="WEB_ICON">
+      </button>
+    </div>
+
+    <!-- Content Pane - see app_base.js -->
+    <div id="content-pane">
         <script type="text/javascript">
           update();
         </script>
-      </div>
     </div>
+
   </body>
+
 </html>

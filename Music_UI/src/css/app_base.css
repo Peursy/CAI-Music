@@ -1,10 +1,65 @@
+html{
+width:100%;
+height:100%;
+}
+
 body{
-  background-color: #DAE8FC
+  background-color: #DAE8FC;
+  width:100%;
+  height:100%;
 }
 
 button{
-  background-color: #33B5E5
+  background-color: #33B5E5;
+
+  border-color: #0099CC;
+  border-width: 2px;
+  border-style: solid;
 }
 
-button, .button_head{
+img{
+  height: 100%:
+}
+
+.button-header-left{
+  width: 15%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+
+  display: inline;
+}
+
+.button-header-right{
+  width: 10% !important;
+  height: 6px;
+  margin: 0%;
+
+  padding: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 0;
+  padding-left: 0;
+
+  margin-left: 1%;
+
+  display: inline;
+}
+
+.button-text{
+  float: right;
+  color: white;
+  font-size: 150%;
+}
+
+.menu-bar{
+  background-color: #00FF00;
+  display : inline !important;
+}
+
+.menu-bar, .menu-bar-main{
+  width:100%;
+  height:20%;
+  margin: 0px;
+  padding: 0px;
 }
