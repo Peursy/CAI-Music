@@ -16,13 +16,13 @@ div.btnbg {
 #formdiv{
   position: absolute;
   display: inline-block;
-  height: 105%;
-  width: 110%;
+  height: 100%;
+  width: 100%;
   z-index: 0;
   background: rgba(120, 120, 140, 0.7);
   filter:blur(4px);
-
-  /*margin-right: 5%;*/
+  /*transform: translate(-10%, 0);
+  margin-left: 5%;*/
   /*margin-bottom: 5%;*/
 }
 
@@ -30,17 +30,39 @@ form{
   position: relative;
   table-layout: fixed;
   z-index: 0;
-  margin-left: 5%;
+  /*margin-left: 5%;*/
   margin-top: 2.5%;
 }
 
 /*=======================================================*/
+#signUp{
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+#signUpButton{
+  position: relative;
+  table-layout: fixed;
+  display: inline;
+  width: 40%;
+  margin-left: 10%;
+  z-index: 0;
+}
+#signInButton{
+  position: relative;
+  table-layout: fixed;
+  display: inline;
+  width: 40%;
+  /*margin-right: 10%;*/
+  z-index: 0;
+}
 .center {
   /*text-align: center;*/
   margin: 0;
   position: absolute;
-  top: 22.5%;
-  left: 20%;
+  top: 25%;
+  left: 25%;
   right: 25%;
   bottom: 25%
   /*-ms-transform: translate(-50%, -50%);*/

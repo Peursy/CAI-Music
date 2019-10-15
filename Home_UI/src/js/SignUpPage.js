@@ -11,3 +11,19 @@
     document.getElementById('message').innerHTML = 'not matching';
   }}
 }
+
+function setVisibility(anId, visibility)
+    {
+      node = document.getElementById(anId);
+      node.style.visibility = visibility;
+      if (visibility=="hidden")
+      {
+        // Contenu caché, le montrer
+        node.style.height = "0";     // Optionnel rétablir la hauteur
+      }
+      else
+      {
+        // Contenu visible, le cacher
+        node.style.height = "auto";      // Optionnel libérer l'espace
+      }
+    }
