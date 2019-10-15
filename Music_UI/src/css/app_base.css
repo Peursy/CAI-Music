@@ -11,15 +11,33 @@ body{
 
 button{
   background-color: #33B5E5;
+
+  border-color: #0099CC;
+  border-width: 2px;
+  border-style: solid;
 }
 
-button, .button-header{
+img{
+  height: 100%:
+}
+
+.button-header-left{
   width: 15%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: inline;
+}
+
+.button-header-right{
+  width: 10% !important;
+  height: 0;
   margin: 0%;
 
-  border-width: 5px;
-  border-style: solid;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 1%;
 
   display: inline;
 }
@@ -34,8 +52,8 @@ button, .button-header{
   flex: none;
   width: 50%;
   height: 100% !important;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   background-color: #00FF00;
   display : inline !important;
 }
