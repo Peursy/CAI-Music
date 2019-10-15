@@ -1,0 +1,4 @@
+very light blue   : DAE8FC
+light blue        : 0099FF
+blue              : 33B5E5
+selected blue     : 0099CC
