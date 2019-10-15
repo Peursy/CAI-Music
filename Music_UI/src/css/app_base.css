@@ -5,7 +5,7 @@ height:100%;
 
 body{
   background-color: #DAE8FC;
-  width:100% !important;
+  width:97% !important;
   height:100% !important;
 }
 
@@ -27,7 +27,7 @@ img{
   height: 100%;
   margin: 0%;
   padding: 0%;
-
+  float: left;
   display: inline;
 }
 
@@ -35,7 +35,7 @@ img{
   width: 10% !important;
   height: 100% !important;
   margin: 0%;
-
+  float: right;
   margin-left: 1%;
 }
 
