@@ -19,6 +19,7 @@ button{
 
 img{
   height: 50%;
+  float: left;
 }
 
 .button-header-left{
@@ -47,12 +48,10 @@ img{
 }
 
 .button-text{
-  float: right;
+  float: left;
   color: white;
   font-size: 150%;
-  align-items: center;
-  align-self: center;
-  align-content: center;
+  padding-top: 10%;
 }
 
 .menu-bar{
