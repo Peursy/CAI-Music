@@ -4,99 +4,88 @@
     <meta charset="utf-8">
     <title>Music_UI</title>
 
+  </head>
+  <body>
+    <canvas id="sakura"></canvas>
+    <div class="btnbg"></div>
+
     <!-- importing css -->
     <link rel="stylesheet" type="text/css" href="src/css/app_base.css" />
     <!-- imported css -->
 
-    <!-- importing js -->
-    <script type="text/javascript" src="src/js/app_base.js"></script>
-    <!-- imported js -->
-
-  </head>
-  <body>
-    <canvas id="sakura"></canvas>
-    <div class="btnbg">
-    </div>
-
-    <script id="sakura_point_vsh" type="x-shader/x_vertex"> </script>
-    <script id="sakura_point_fsh" type="x-shader/x_fragment"> </script>
-    <script src="src/js/sakura_point_vsh.js"></script>
-    <!-- effects -->
+    <!-- importing effects -->
     <script id="fx_common_vsh" type="x-shader/x_vertex"> </script>
     <script id="bg_fsh" type="x-shader/x_fragment"> </script>
     <script id="fx_brightbuf_fsh" type="x-shader/x_fragment"> </script>
     <script id="fx_dirblur_r4_fsh" type="x-shader/x_fragment"> </script>
+    <script id="sakura_point_vsh" type="x-shader/x_vertex"> </script>
+    <script id="sakura_point_fsh" type="x-shader/x_fragment"> </script>
     <!-- effect fragment shader template -->
     <script id="fx_common_fsh" type="x-shader/x_fragment"> </script>
     <!-- post processing -->
     <script id="pp_final_vsh" type="x-shader/x_vertex"> </script>
     <script id="pp_final_fsh" type="x-shader/x_fragment"> </script>
+    <!-- imported effects -->
 
-
+    <!-- importing js -->
+    <script type="text/javascript" src="src/js/app_base.js"></script>
+    <script type="text/javascript" src="src/js/sakura_point_vsh.js"></script>
     <script type="text/javascript" src="src/js/sakura_point_vsh.js"></script>
     <script type="text/javascript" src="src/js/mainSakura.js"></script>
+    <!-- imported js -->
 
+    <div class="center">
+      <!-- <div class="blurbg"></div> -->
+        <div class="menu-bar-main">
+          <!-- top-left menubar -->
+          <button id="b_1" class="button-header-left" onclick="change_content_pane(HOME)">
+            <img src="assets/icons/home_icon.png" alt="HOME_ICON">
+            <div class="button-text">
+              Home
+            </div>
+          </button>
 
+          <button id="b_2"class="button-header-left" onclick="change_content_pane(DEMO)">
+            <img src="assets/icons/demo_icon.png" alt="DEMO_ICON">
+            <div class="button-text">
+              Demo
+            </div>
+          </button>
 
-<div class="center">
+          <button id="b_3" class="button-header-left" style="border-radius: 0px 0px 50px 0px;">
+            <img src="assets/icons/tuto_icon.png" alt="TUTO_ICON">
+            <div class="button-text">
+              Tuto
+            </div>
+          </button>
 
-  <!-- <div class="blurbg"></div> -->
-    <div class="menu-bar-main">
+          <!-- top-right menubar -->
+          <button id="b_-1" class="button-header-right">
+            <br>
+              <img src="assets/icons/user_icon.png" style="float:none;" alt="USER_ICON">
+            </br>
+          </button>
 
-      <!-- top-left menubar -->
+          <button id="b_-2" class="button-header-right">
+            <br>
+              <img src="assets/icons/search_icon.png" style="float:none;" alt="SEARCH_ICON">
+            </br>
+          </button>
 
-
-      <button id="b_1" class="button-header-left" onclick="change_content_pane(HOME)">
-        <img src="assets/icons/home_icon.png" alt="HOME_ICON">
-        <div class="button-text">
-          Home
+          <button id="b_-3" class="button-header-right">
+            <br>
+              <img src="assets/icons/web_icon.png" style="float:none;" alt="WEB_ICON">
+            </br>
+          </button>
         </div>
-      </button>
-
-      <button id="b_2"class="button-header-left" onclick="change_content_pane(DEMO)">
-        <img src="assets/icons/demo_icon.png" alt="DEMO_ICON">
-        <div class="button-text">
-          Demo
+      <!-- Content Pane - see app_base.js -->
+      <!-- <div> -->
+        <div id="content-pane">
+            <script type="text/javascript">
+              update();
+            </script>
         </div>
-      </button>
-
-      <button id="b_3" class="button-header-left" style="border-radius: 0px 0px 50px 0px;">
-        <img src="assets/icons/tuto_icon.png" alt="TUTO_ICON">
-        <div class="button-text">
-          Tuto
-        </div>
-      </button>
-
-      <!-- top-right menubar -->
-      <button id="b_-1" class="button-header-right">
-        <br>
-          <img src="assets/icons/user_icon.png" style="float:none;" alt="USER_ICON">
-        </br>
-      </button>
-
-      <button id="b_-2" class="button-header-right">
-        <br>
-          <img src="assets/icons/search_icon.png" style="float:none;" alt="SEARCH_ICON">
-        </br>
-      </button>
-
-      <button id="b_-3" class="button-header-right">
-        <br>
-          <img src="assets/icons/web_icon.png" style="float:none;" alt="WEB_ICON">
-        </br>
-      </button>
+      <!-- </div> -->
     </div>
-
-    <!-- Content Pane - see app_base.js -->
-    <!-- <div> -->
-      <div id="content-pane">
-          <script type="text/javascript">
-            update();
-          </script>
-      </div>
-    <!-- </div> -->
-  </div>
-
   </body>
-
 </html>
