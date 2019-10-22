@@ -1,5 +1,6 @@
 const HOME = 0;
 const DEMO = 1;
+const TUTO = 2;
 
 var current_content_pane = HOME;
 
@@ -15,6 +16,9 @@ function update(){
     break;
     case DEMO:
       document.getElementById("content-pane").innerHTML='<object class="center" type="text/html" data="src/html/demo_content.html" style="width:100%; height:100%;"></object>';
+    break;
+    case TUTO:
+      document.getElementById("content-pane").innerHTML='<object class="center" type="text/html" data="src/html/tutorial_content.html" style="width:100%; height:100%;"></object>';
     break;
 
   }
