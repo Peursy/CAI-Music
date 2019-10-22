@@ -1,0 +1,57 @@
+form{color: #33B5E5;font-size:100%;font-family: Florence, cursive;}
+
+h1{margin-top: 5% ;color: #33B5E5;font-family: Florence, cursive;font-weight: bold; text-align: center;}
+
+
+div.left{float: left;
+		width: 45%;}
+div.right{float: left;
+		width: 55%;}
+
+div.Cordes{float:left;
+		border: 10px solid #CCC;
+        background: #CCC;
+        margin-left: 20%;
+        border-radius:5%;
+    	margin-bottom: 5%;}
+
+div.Cuivres{
+		float:right;
+		margin-right:10%;
+		border: 10px solid #CCC;
+		border-radius:5%;
+        background: #CCC;
+    	margin-bottom: 5%;}
+
+div.Bois{float:left;
+		margin-left:10%;
+		border: 10px solid #CCC;
+		border-radius:5%;
+        background: #CCC;
+    	margin-bottom: 5%;}
+
+div.Percussions{float:right;
+		margin-right: 20%;
+		border: 10px solid #CCC;
+		border-radius:5%;
+        background: #CCC;}
+
+
+
+button{
+		cursor:pointer;
+		text-transform:capitalize;
+		width:120px;
+		height:90px;
+		background:#fafafa;
+		box-shadow:2px 2px 8px #33B5E5;
+		font:bold 17px Arial;
+		border-radius:50%;
+		color:#33B5E5;
+		margin-bottom: 5%;
+	}
+
+button#b1{margin-left: 46%;}
+
+
+
