@@ -22,6 +22,7 @@ button{
   border-color: black;
   border-width: thick;
   cursor: pointer;
+  border-radius: 25px;
 }
 
 a:link{
