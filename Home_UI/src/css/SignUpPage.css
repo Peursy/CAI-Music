@@ -41,22 +41,63 @@ form{
 
 }
 
-#signUpButton{
+/*#signUpButton{
   position: relative;
   table-layout: fixed;
   display: inline;
-  width: 40%;
+  width: 45%;
   margin-left: 10%;
-  z-index: 0;
+  z-index: 0; 
+   border-radius: 15px;
+  /*background-color: #0099CC;
+  color: white;
+  text-align: center;
+  align-self: right;
+  margin: 12px ;
+  padding: 12px 20px;
 }
 #signInButton{
   position: relative;
   table-layout: fixed;
   display: inline;
-  width: 40%;
-  /*margin-right: 10%;*/
+  width: 45%;
+  /*margin-right: 10%;
   z-index: 0;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  align-self: right;
+  margin: 12px ;
+  padding: 12px 20px;
+  /*background-color: #0099CC;
+}*/
+
+.btn{
+  position: relative;
+  table-layout: fixed;
+  display: inline;
+  width: 45%;
+  margin-left: 10%;
+  z-index: 0; 
+   border-radius: 15px;
+  background-color: #0099CC;
+  color: white;
+  text-align: center;
+  align-self: right;
+  margin: 12px ;
+  padding: 12px 20px;
 }
+
+.btn:hover , .btn:focus{
+  background-color: #04456b;
+  border-color: #040404;
+}
+
+.btn:default{
+background-color: #0099CC;
+}
+
+
 .center {
   /*text-align: center;*/
   margin: 0;
@@ -139,9 +180,9 @@ input[type=submit] {
   width: 25px;
   background-color: #eee;
 }
-.container:hover input ~ .checkmark {
+/*label.container:hover input ~ .checkmark {
   background-color: #ccc;
-}
+}*/
 
 .container input:checked ~ .checkmark {
   background-color: #0099CC;
