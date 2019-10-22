@@ -19,28 +19,28 @@
 
 		<div class="left">
 			<div class="Cordes">
-				<button id = "b2" type="button" value = 0 onclick="checkButton('b2', value)">Cordes </button>
+				<button id = "b2" type="button" value = 0 onclick="checkButton('b2', value); toutSelect();">Cordes </button>
 				<br>
-				<input type="checkbox" id="b21" value="Violon"/>Violon<br>
-				<input type="checkbox" id="b22" value="Violoncelle"/>Violoncelle<br>
-				<input type="checkbox" id="b23" value="Alto"/>Alto<br>
-				<input type="checkbox" id="b24" value="Guitare"/>Guitares<br>
-				<input type="checkbox" id="b25" value="Harpe"/>Harpe<br>
-				<input type="checkbox" id="b26" value="Contrebasse"/>Contrebasse<br>
-				<input type="checkbox" id="b27" value="Piano"/>Piano<br>
+				<input type="checkbox" id="b21" onclick="selectSecteur('b2', 'b21')" value="Violon"/>Violon<br>
+				<input type="checkbox" id="b22" onclick="selectSecteur('b2', 'b22')" value="Violoncelle"/>Violoncelle<br>
+				<input type="checkbox" id="b23" onclick="selectSecteur('b2', 'b23')" value="Alto"/>Alto<br>
+				<input type="checkbox" id="b24" onclick="selectSecteur('b2', 'b24')" value="Guitare"/>Guitares<br>
+				<input type="checkbox" id="b25" onclick="selectSecteur('b2', 'b25')" value="Harpe"/>Harpe<br>
+				<input type="checkbox" id="b26" onclick="selectSecteur('b2', 'b26')" value="Contrebasse"/>Contrebasse<br>
+				<input type="checkbox" id="b27" onclick="selectSecteur('b2', 'b27')" value="Piano"/>Piano<br>
 			</div>
 
 
 		<div class="Cuivres">
-			<button id = "b3" type="button" value = 0 onclick="checkButton('b3', value)">Cuivres</button>
+			<button id = "b3" type="button" value = 0 onclick="checkButton('b3', value); toutSelect();">Cuivres</button>
 			<br>
-				<input type="checkbox" id="b31" value="Trompettes"/>Trompettes<br>
-				<input type="checkbox" id="b32" value="Trombones"/>Trombones<br>
-				<input type="checkbox" id="b33" value="Saxhons"/>Clairon<br>
-				<input type="checkbox" id="b34" value="Saxhons"/>Saxhons<br>
-				<input type="checkbox" id="b35" value="Tubas"/>Tubas<br>
-				<input type="checkbox" id="b36" value="Hélicon"/>Hélicon<br>
-				<input type="checkbox" id="b37" value="Cors"/>Cors<br>
+				<input type="checkbox" id="b31" onclick="selectSecteur('b3', 'b31')" value="Trompettes"/>Trompettes<br>
+				<input type="checkbox" id="b32" onclick="selectSecteur('b3', 'b32')" value="Trombones"/>Trombones<br>
+				<input type="checkbox" id="b33" onclick="selectSecteur('b3', 'b33')" value="Saxhons"/>Clairon<br>
+				<input type="checkbox" id="b34" onclick="selectSecteur('b3', 'b34')" value="Saxhons"/>Saxhons<br>
+				<input type="checkbox" id="b35" onclick="selectSecteur('b3', 'b35')" value="Tubas"/>Tubas<br>
+				<input type="checkbox" id="b36" onclick="selectSecteur('b3', 'b36')" value="Hélicon"/>Hélicon<br>
+				<input type="checkbox" id="b37" onclick="selectSecteur('b3', 'b37')" value="Cors"/>Cors<br>
 		</div>
 
 		</div>
@@ -49,37 +49,41 @@
 		<div class="right">
 
 		<div class="Bois">
-			<button id = "b4" type="button" value = 0 onclick="checkButton('b4', value)">Bois</button>
+			<button id = "b4" type="button" value = 0 onclick="checkButton('b4', value); toutSelect();">Bois</button>
 			<br>
-				<input type="checkbox" id="b41" value="Piccolo"/>Piccolo<br>
-				<input type="checkbox" id="b42" value="Flûte traversière"/>Flûte traversière<br>
-				<input type="checkbox" id="b43" value="Clarinette"/>Clarinette<br>
-				<input type="checkbox" id="b44" value="Hautbois"/>Hautbois<br>
-				<input type="checkbox" id="b45" value="Saxophone"/>Saxophone<br>
-				<input type="checkbox" id="b46" value="Basson"/>Basson<br>
-				<input type="checkbox" id="b47" value="Flûte à bec"/>Flûte à bec<br>
-
+				<input type="checkbox" id="b41" onclick="selectSecteur('b4', 'b41')" value="Piccolo"/>Piccolo<br>
+				<input type="checkbox" id="b42" onclick="selectSecteur('b4', 'b42')" value="Flûte traversière"/>Flûte traversière<br>
+				<input type="checkbox" id="b43" onclick="selectSecteur('b4', 'b43')" value="Clarinette"/>Clarinette<br>
+				<input type="checkbox" id="b44" onclick="selectSecteur('b4', 'b44')" value="Hautbois"/>Hautbois<br>
+				<input type="checkbox" id="b45" onclick="selectSecteur('b4', 'b45')" value="Saxophone"/>Saxophone<br>
+				<input type="checkbox" id="b46" onclick="selectSecteur('b4', 'b46')" value="Basson"/>Basson<br>
+				<input type="checkbox" id="b47" onclick="selectSecteur('b4', 'b47')" value="Flûte à bec"/>Flûte à bec<br>
 		</div>
 
 		<div class="Percussions">
-			<button id = "b5" type="button" value = 0 onclick="checkButton('b5', value)">Percussions</button>
+			<button id = "b5" type="button" value = 0 onclick="checkButton('b5', value); toutSelect();">Percussions</button>
 			<br>
-				<input type="checkbox" id="b51" value="Batterie"/>Batterie<br>
-				<input type="checkbox" id="b52" value="Tambours"/>Tambours<br>
-				<input type="checkbox" id="b53" value="Tam-tam"/> Tam-tam <br>
-				<input type="checkbox" id="b54" value="Caisse-claire"/>Caisse-claire<br>
-				<input type="checkbox" id="b55" value="Cymbales"/>Cymbales<br>
-				<input type="checkbox" id="b56" value="Petites percussions"/>Petites percussions<br>
-				<input type="checkbox" id="b57" value="Xilophone"/>Xilophone<br>
+				<input type="checkbox" id="b51" onclick="selectSecteur('b5', 'b51')" value="Batterie"/>Batterie<br>
+				<input type="checkbox" id="b52" onclick="selectSecteur('b5', 'b52')" value="Tambours"/>Tambours<br>
+				<input type="checkbox" id="b53" onclick="selectSecteur('b5', 'b53')" value="Tam-tam"/> Tam-tam <br>
+				<input type="checkbox" id="b54" onclick="selectSecteur('b5', 'b54')" value="Caisse-claire"/>Caisse-claire<br>
+				<input type="checkbox" id="b55" onclick="selectSecteur('b5', 'b55')" value="Cymbales"/>Cymbales<br>
+				<input type="checkbox" id="b56" onclick="selectSecteur('b5', 'b56')" value="Petites percussions"/>Petites percussions<br>
+				<input type="checkbox" id="b57" onclick="selectSecteur('b5', 'b57')" value="Xilophone"/>Xilophone<br>
 		</div>
 		</div>
 	</form>
 
 	<script type="text/javascript" src="../js/recherche.js"></script>
+
 	<div class="right">
 	<a href="../../index.html" target="_blank">
 		<img src="../../../assets/icons/Home.png" alt="" class="home_button" href='../../src/index.html'></a>
 	</div>
+
+
+
+
 </body>
 </html>
 
