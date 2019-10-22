@@ -1,0 +1,30 @@
+.center {
+  /*text-align: center;*/
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%
+  /*-ms-transform: translate(-50%, -50%);*/
+  transform: translate(-25%, -25%);
+}
+
+button{
+  color: white;
+  background-color: #0099CC;
+  font-size: 200%;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+a:link{
+  text-decoration: none;
+}
