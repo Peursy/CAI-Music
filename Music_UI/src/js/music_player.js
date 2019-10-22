@@ -1,3 +1,5 @@
 resize_player = function(){
-  document.getElementById("frame").contentWindow.document.getElementsByClassName("viewerInner")[0].style="width:100% !important;";
+  console.log(document.getElementById("frame"));
+  document.getElementById("frame").contentWindow.document.getElementsByClassName("viewer")[0].style="zoom:2 !important;";
 }
+resize_player();
