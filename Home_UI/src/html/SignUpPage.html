@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>SignUpPage</title>
-  <link rel="stylesheet" href="../css/SignUpPage.css">   
+  <link rel="stylesheet" href="../css/SignUpPage.css">
 </head>
 <body style="width: 100%;height: 100%;">
 
  <canvas id="sakura"></canvas>
  <div class="btnbg">
  </div>
- 
+
  <script id="sakura_point_vsh" type="x-shader/x_vertex"> </script>
  <script id="sakura_point_fsh" type="x-shader/x_fragment"> </script>
  <script src="../js/sakura_point_vsh.js"></script>
@@ -31,14 +31,14 @@
  <script src="../js/mainSakura.js"></script>
 
 <div class="center">
-  
+
 
 
   <div id="formdiv"></div>
  <button type="button" onclick ="setVisibility('signUp', 'visible');setVisibility('signIn', 'hidden');" id="signUpButton" class="btn">Inscprition</button>
   <button type="button" onclick ="setVisibility('signUp', 'hidden');setVisibility('signIn', 'visible');" id="signInButton" class="btn">Connexion</button>
   <div id="signUp" >
-    <form action="" style="width: 100%;height: 100%;">
+    <form action="recherche.html" style="width: 100%;height: 100%;">
 
       <h2 class="titre">Inscription</h2>
       <input type="text" name="pseudo" placeholder="Pseudo" required id="username_field">
@@ -67,7 +67,7 @@
   </div>
 
   <div id="signIn", style="visibility: hidden; height:0;">
-    <form action="" style="width: 100%;height: 100%;">
+    <form action="recherche.html" style="width: 100%;height: 100%;">
 
       <h2 class="titre">Connexion</h2>
       <input type="text" name="pseudo" placeholder="Pseudo" required id="username_field">
@@ -96,7 +96,7 @@
   </div>
 
 
-  
+
 
 </div>
 </body>
