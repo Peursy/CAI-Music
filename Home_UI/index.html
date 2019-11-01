@@ -7,17 +7,32 @@
     <link rel="stylesheet" href="src/css/HomePage.css">
   </head>
   <body>
-    
+    <canvas id="sakura"></canvas>
+
+    <script id="sakura_point_vsh" type="x-shader/x_vertex"> </script>
+    <script id="sakura_point_fsh" type="x-shader/x_fragment"> </script>
+    <script src="js/sakura_point_vsh.js"></script>
+    <!-- effects -->
+    <script id="fx_common_vsh" type="x-shader/x_vertex"> </script>
+    <script id="bg_fsh" type="x-shader/x_fragment"> </script>
+    <script id="fx_brightbuf_fsh" type="x-shader/x_fragment"> </script>
+    <script id="fx_dirblur_r4_fsh" type="x-shader/x_fragment"> </script>
+    <!-- effect fragment shader template -->
+    <script id="fx_common_fsh" type="x-shader/x_fragment"> </script>
+    <!-- post processing -->
+    <script id="pp_final_vsh" type="x-shader/x_vertex"> </script>
+    <script id="pp_final_fsh" type="x-shader/x_fragment"> </script>
+
+
+    <script src="js/sakura_point_vsh.js"></script>
+    <script src="js/mainSakura.js"></script>
+
   <div class="center">
     <button type="button"onclick="window.location.href='src/html/SignUpPage.html'">Créer un profil ou se connecter</button><br/>
     <button type="button">Visiter le magasin</button><br/>
     <button type="button"onclick="window.location.href='src/html/recherche.html'">Me diriger</button><br/>
     <button type="button">Me laisser tranquille</button><br/>
   </div>
-    
+
   </body>
 </html>
-
-<!--AJOUTER LES LIENS VERS LES AUTRES PAGES-->
-<!--AJOUTER LE HOME-->
-<!--AJOUTER LES 2 BOUTONS-->
