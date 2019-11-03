@@ -13,18 +13,6 @@ div.btnbg {
     left:0;
     top:0;
 }
-#formdiv{
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  background: rgba(120, 120, 140, 0.7);
-  filter:blur(4px);
-  /*transform: translate(-10%, 0);
-  margin-left: 5%;*/
-  /*margin-bottom: 5%;*/
-}
 
 form{
   position: relative;
@@ -210,3 +198,16 @@ input[type=submit] {
 }
 
 /* END STYLING CHECKBOX */
+
+.blurshadow{
+  box-sizing: border-box;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px 0 rgba(150, 150, 180, 1) inset, 0 0 10px 10px rgba(150, 150, 180, 1);
+  /*margin:10px;*/
+}
+.blurbg{
+  background-color:rgba(150, 150, 180, 0.8);
+}
+.colorfill{
+  background-color:rgba(150, 150, 180, 1);
+}

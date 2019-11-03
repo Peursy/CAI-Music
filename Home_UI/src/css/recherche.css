@@ -1,4 +1,6 @@
-body{overflow: hidden;}
+body{overflow: hidden;
+    padding:0;
+    margin:0;}
 
 form{color: #33B5E5;font-size:100%;font-family: Florence, cursive;}
 
@@ -89,4 +91,18 @@ div.btnbg {
   bottom: 25%
   /*-ms-transform: translate(-50%, -50%);*/
   transform: translate(-25%, -25%);
+}
+
+
+.blurshadow{
+  box-sizing: border-box;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px 0 rgba(150, 150, 180, 1) inset, 0 0 10px 10px rgba(150, 150, 180, 1);
+  /*margin:10px;*/
+}
+.blurbg{
+  background-color:rgba(150, 150, 180, 0.8);
+}
+.colorfill{
+  background-color:rgba(150, 150, 180, 1);
 }
