@@ -1,3 +1,9 @@
+body{
+  padding:0;
+  margin:0;
+  overflow: hidden;
+}
+
 .center {
   /*text-align: center;*/
   margin: 0;
@@ -38,4 +44,18 @@ div.btnbg {
     position:fixed;
     left:0;
     top:0;
+}
+
+
+.blurshadow{
+  box-sizing: border-box;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px 0 rgba(150, 150, 180, 1) inset, 0 0 10px 10px rgba(150, 150, 180, 1);
+  /*margin:10px;*/
+}
+.blurbg{
+  background-color:rgba(150, 150, 180, 0.8);
+}
+.colorfill{
+  background-color:rgba(150, 150, 180, 1);
 }
